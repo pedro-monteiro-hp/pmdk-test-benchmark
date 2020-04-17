@@ -1,0 +1,4 @@
+PMEMPOOLSET
+OPTION SINGLEHDR
+200G /mnt/pmem/poolset
+
