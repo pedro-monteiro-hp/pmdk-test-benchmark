@@ -80,7 +80,7 @@ void read_random_1mb(const char *path)
 	double time_taken_read = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("read random 200GB in 1mb took %f seconds\n", time_taken_read);
+	printf("read random 140GB in 1mb took %f seconds\n", time_taken_read);
 
 	pmemobj_close(pop);
 
@@ -134,7 +134,7 @@ void read_random_512mb(const char *path)
 	double time_taken_read = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("read random 200GB in 512mb took %f seconds\n", time_taken_read);
+	printf("read random 140GB in 512mb took %f seconds\n", time_taken_read);
 
 	pmemobj_close(pop);
 
@@ -187,7 +187,7 @@ void write_random_1mb(const char *path)
 	double time_taken_write = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("write random 200GB in 1mb took %f seconds\n", time_taken_write);
+	printf("write random 140GB in 1mb took %f seconds\n", time_taken_write);
 
 	pmemobj_close(pop);
 
@@ -240,7 +240,7 @@ void write_random_512mb(const char *path)
 	double time_taken_write = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("write random 200GB in 512mb took %f seconds\n", time_taken_write);
+	printf("write random 140GB in 512mb took %f seconds\n", time_taken_write);
 
 	pmemobj_close(pop);
 
@@ -281,7 +281,7 @@ void read_sequential_1mb(const char *path)
 	double time_taken_read = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("read 200GB in 1mb took %f seconds\n", time_taken_read);
+	printf("read 140GB in 1mb took %f seconds\n", time_taken_read);
 
 	pmemobj_close(pop);
 
@@ -322,7 +322,7 @@ void read_sequential_512mb(const char *path)
 	double time_taken_read = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("read 200GB in 512mb took %f seconds\n", time_taken_read);
+	printf("read 140GB in 512mb took %f seconds\n", time_taken_read);
 
 	pmemobj_close(pop);
 
@@ -362,7 +362,7 @@ void write_sequential_1mb(const char *path)
 	double time_taken_write = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("write 200GB in 1mb took %f seconds\n", time_taken_write);
+	printf("write 140GB in 1mb took %f seconds\n", time_taken_write);
 
 	pmemobj_close(pop);
 
@@ -402,7 +402,7 @@ void write_sequential_512mb(const char *path)
 	double time_taken_write = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("open pool took %f seconds\n", time_taken_open);
-	printf("write 200GB in 512mb took %f seconds\n",  time_taken_write);
+	printf("write 140GB in 512mb took %f seconds\n",  time_taken_write);
 
 	pmemobj_close(pop);
 
@@ -441,7 +441,7 @@ void pool()
 	double time_taken_alloc = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("create pool took %f seconds\n", time_taken_create);
-	printf("allocate 200GB took %f seconds\n", time_taken_alloc);
+	printf("allocate 140GB took %f seconds\n", time_taken_alloc);
 
 	pmemobj_close(pop);
 
@@ -502,7 +502,7 @@ void poolset()
 	double time_taken_alloc = ((double)t) / CLOCKS_PER_SEC;
 
 	printf("create pool took %f seconds\n", time_taken_create);
-	printf("allocate 200GB took %f seconds\n", time_taken_alloc);
+	printf("allocate 140GB took %f seconds\n", time_taken_alloc);
 
 	pmemobj_close(pop);
 
